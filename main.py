@@ -3,7 +3,7 @@ import telebot
 from telebot import types
 token = os.environ['TELEGRAM_TOKEN']
 
-bot = telebot.TeleBot('token')
+bot = telebot.TeleBot(token)
 
 keyboard_start = types.InlineKeyboardMarkup()
 key_start = types.InlineKeyboardButton(text='Начнём!', callback_data='start_test')
